@@ -3,20 +3,34 @@
 ---------------------*/
 body {
     color:#343434;
+    margin: 0;
+    padding: 0;
 }
-
 img {
     width: 300px;   
 }
 a {
-    color: #A1C6D7;
+    color: rgb(153, 178, 202);
 }
 a:hover {
     text-decoration: none;
 }
-
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
+}
+h1 {
+    font-size: 40px;
+}
+h2 {
+   margin: 0; 
+}
+.content-wrap {
+    width: 700px;
+    margin: 0 auto;
+    padding: 60px 0;
 }
 
 /* Profile 
@@ -30,7 +44,7 @@ header {
 /* Projects
 ---------------------*/
 .projects {
-    background: rgb(242, 246, 248);
+    background: #ebeef1;
 }
 .projects a {
     color:  #3A556D;
@@ -41,6 +55,11 @@ header {
     text-decoration: none;
     padding: 8px;
     border-radius: 4px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 14px;
 }
 .projects .btn:hover {
     background: rgba(58, 85, 109, 80%);
@@ -53,20 +72,32 @@ header {
 /* Work experience
 ---------------------*/
 .work-experience {
-    background: #A1C6D7;
+   background:rgb(160, 176, 190);
+
+    /*rgb(93, 105, 116);*/
 }
 
 /* Education
 ---------------------*/
 
-
 /* Contact info
 ---------------------*/
-
-footer{
-    background: #343434;
-    color: #F7FFF7;
+footer {
+    background: #3f4041;
+    color: #ffffff;
+    border-top: 4px solid #000000;
+}
+footer h2 {
+    text-align: center;
+}
+footer ul {
+    list-style-type: none;
+}
+footer ul li {
+    display: inline-block;
+    padding-right: 10px;
 }
 footer a {
     font-family: 'Montserrat', sans-serif;
+    color: white;
 }
