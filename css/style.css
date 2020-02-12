@@ -1,10 +1,19 @@
 
 /* Global styles 
 ---------------------*/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 body {
     color:#343434;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
 }
 img {
     width: 300px;   
@@ -15,17 +24,41 @@ a {
 a:hover {
     text-decoration: none;
 }
-p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+
 h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
 }
+
+h1 h2 {
+    font-weight: 400;
+    margin: 0;
+}
+
 h1 {
-    font-size: 40px;
+    font-size: 70px; /* was 60, tutorial said 100*/ 
+    line-height: 1;
+    font-style: italic;
+    text-shadow: 
+    0 1px 0px #378ab4,
+    1px 0 0px #5dabcd,
+    1px 2px 1px #378ab4,
+    2px 1px 1px #5dabcd,
+    2px 3px 2px #378ab4,
+    3px 2px 2px #5dabcd,
+    3px 4px 2px #378ab4,
+    4px 3px 3px #5dabcd,
+    4px 5px 3px #378ab4,
+    5px 4px 2px #5dabcd,
+    5px 6px 2px #378ab4,
+    6px 5px 2px #5dabcd,
+    6px 7px 1px #378ab4,
+    7px 6px 1px #5dabcd,
+    7px 8px 0px #378ab4,
+    8px 7px 0px #5dabcd;
+    
 }
 h2 {
-   margin: 0; 
+   font-size: 40px;
 }
 .content-wrap {
     width: 700px;
@@ -60,21 +93,29 @@ header {
     letter-spacing: 1px;
     font-weight: bold;
     font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
 }
 .projects .btn:hover {
     background: rgba(58, 85, 109, 80%);
 }
-
-.btn {
-    font-family: 'Montserrat', sans-serif;
+.project-item {
+    overflow: hidden;
+    border-bottom: 1px solid #3A556D;
+    padding: 25px 0;
+}
+.project-item img {
+    float: right; 
+    margin-left: 20px; 
+}
+.project-item h3 {
+    margin-top: 0;
 }
 
 /* Work experience
 ---------------------*/
 .work-experience {
    background:rgb(160, 176, 190);
-
-    /*rgb(93, 105, 116);*/
+   /*background-color: #b6d1dd;*/
 }
 
 /* Education
@@ -83,7 +124,7 @@ header {
 /* Contact info
 ---------------------*/
 footer {
-    background: #3f4041;
+    background:rgb(29, 42, 54);
     color: #ffffff;
     border-top: 4px solid #000000;
 }
@@ -91,7 +132,8 @@ footer h2 {
     text-align: center;
 }
 footer ul {
-    list-style-type: none;
+    list-style: none;
+    text-align: center;
 }
 footer ul li {
     display: inline-block;
