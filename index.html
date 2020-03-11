@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +11,32 @@
 <body>
   <main>
     <!-- ***********************  ABOUT / PROFILE  *********************** -->
+        <nav>
+            <ul>
+              <li><a href="http://wcet3.waketech.edu/kcleto/WEB210/WEEK8/index.html">Home</a></li>
+              <li><a href="#">About Me</a></li>
+              <li><a href="#">Services</a>
+                <ul>
+                  <li><a href="#">Web Design</a></li>
+                  <li><a href="#">Web Development</a></li>
+                  <li><a href="#">Logo Design</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Work Experience</a>
+                <ul>
+                  <li><a href="#">Projects</a></li>
+                  <li><a href="#">Relevant Work Experience</a></li>
+                </ul>
+              </li> 
+              <li><a href="#">Contact</a>
+                <ul>
+                  <li><a href="http://wcet3.waketech.edu/kcleto/WEB210/WEEK8/contact.html ">Contact Form</a></li>
+                  <li><a href="#">Email</a></li>
+                  <li><a href="#">Social Media</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
     <header>
       <div class="content-wrap">
         <h1>Kara Leto</h1>
@@ -50,15 +75,19 @@
 
     <!-- ***********************  WORK EXPERIENCE  *********************** -->
     <section class="work-experience">
-      <div class="content-wrap">
+      <div class="content-wrap item-details">
         <h2>Work Experience</h2>
 
         <!-- Copy this whole <section> block to add more jobs. -->
-        <section>
+        <section  class="job-item">
+          <div class="job-details">
           <h3>Website Manager</h3>
           <p>Yoga Legacy</p>
           <p>July 2017 - Current</p>
+        </div>
+        <div class="job-summary">
           <p>Redesigned website, and update content when needed.</p>
+        </div>
         </section>
         <!-- End of Job block. -->
       </div>
@@ -66,7 +95,7 @@
 
     <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
     <section class="education">
-      <div class="content-wrap">
+      <div class="content-wrap item-details">
         <h2>Education</h2>
 
         <!-- Copy this whole <section> block to add more schools. -->
@@ -85,7 +114,8 @@
         <h2>Let's Keep in Touch!</h2>
 
         <!-- Social media and contact links. Add or remove any networks. -->
-        <ul>
+        <ul class="contact-list">
+        
           <li><a href="mailto:kcleto@my.waketech.edu">kcleto@my.waketech.edu</a></li>
           <li><a href="#" target="_blank">mywebsite.com</a></li>
           <li><a href="#" target="_blank">Twitter</a></li>

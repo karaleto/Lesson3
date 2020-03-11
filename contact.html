@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        main {
+            width: 80%;
+            margin: 0 auto;
+            padding: 1.5%;
+            line-height: 1.5;
+        }
+        section {
+            display: block;
+        }
+        .main-section {
+            background-color: #3A556D;
+        }
+        h2 {
+            color: #343434;
+            text-align: center;
+        }
+        h3 {
+            color: white;
+            margin: 0 0 1em;
+            margin-left: 0.5em;
+        }
+        p {
+            margin: 0 0 1em;
+            color: white;
+        }
+        .contact-form {
+            line-height: 1.4;
+        }
+        .main-section {
+            margin-bottom: 1em;
+            padding: 10px;
+        }
+        .main-section ul {
+            list-style: none;
+            margin: 0 0 2em;
+            padding: 0;
+        }
+        .main-section li {
+            margin-bottom: 0.5em;
+        }
+        .main-section h3 {
+            margin-bottom: 1em;
+        }
+        .submit-form h3 {
+            color: black;
+        }
+        
+        .main-fields input[type="text"],
+        .main-fields input[type="tel"],
+        .main-fields input[type="email"],
+        .main-fields select {
+            box-sizing: border-box;
+            padding: 0.7em 0.9em;
+            color: black;
+            background: #ffffff;;
+            border: 1px solid rgb(160, 176, 190);
+            overflow: hidden;
+            text-overflow: ellipse;
+            white-space: nowrap;
+            font-size: 1em;
+            text-decoration: none;
+            line-height: normal;
+            max-height: 3em;
+            margin: 0.5em;
+        }
+        .main-fields input[type="text"]:focus,
+        .main-fields input[type="tel"]:focus,
+        .main-fields input[type="email"]:focus,
+        .main-fields textarea:focus,
+        .main-fields select:focus {
+            color:black;
+            border: 1 solid rgb(160, 176, 190);
+            outline: none;
+            background: #ebeef1;
+        }
+        .main-fields textarea {
+            display: block;
+            box-sizing: border-box;
+            font: 1em Roboto, sans-serif;
+            width: 90%;
+            height: 6em;
+            overflow: auto;
+            padding: 0.6em 0.8em;
+            background:#fff;
+            border: 1px solid rgb(37, 53, 68);
+            line-height: normal;
+        }
+        .submit-btn {
+            border-radius: 0px 2px 2px 0px;
+            box-sizing: content-box;
+            background: #3A556D; 
+            font-weight: bold;
+            text-transform: uppercase;
+            color:white;
+            padding: 0.35em 0.75em;
+            border: none;
+            font-size: 1.1em;
+            text-decoration: none;
+            cursor: pointer;
+            margin-left: 1em;
+            margin-bottom: 1em;
+        }
+        .submit-btn:hover {
+            background: rgb(160, 176, 190);
+        }
+        /*flex */
+        .contact-form {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -2em;
+        }
+        .main-section {
+            flex: 1 0 300px;
+            margin-right: 2em;
+        }
+        .submit-form {
+            flex: 0 0 100%;
+        }
+        .main-fields li {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .main-fields input[type="text"],
+        .main-fields input[type="tel"],
+        .main-fields input[type="email"],
+        .main-fields select {
+            flex: 1 0 230px;
+        }
+        .main-fields label {
+            float: 1 0 90px;
+            max-width: 200px;
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+        }
+        .interest-fields {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .interest-fields li {
+            width: 145px;
+            color: white;
+        }
+        @media (max-width: 400px) {
+            body {
+                width: 100%;
+                margin: 0;
+                padding: 0 0 2em;
+            }
+            .submit-form {
+                padding: 2% 5%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+        <nav>
+            <ul>
+                <li><a href="http://wcet3.waketech.edu/kcleto/WEB210/WEEK8/index.html">Home</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Services</a>
+                    <ul>
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Logo Design</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Work Experience</a>
+                    <ul>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Relevant Work Experience</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a>
+                    <ul>
+                        <li><a href="http://wcet3.waketech.edu/kcleto/WEB210/WEEK8/contact.html ">Contact Form</a></li>
+                        <li><a href="#">Email</a></li>
+                        <li><a href="#">Social Media</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    <main>
+        <h2>Contact</h2>
+        <form class="contact-form">
+            <section class="main-section">
+                <ul class="main-fields">
+                    <li><label for="first-name">First Name:</label> <input type="text" name="first-name" id="first-name"
+                            class="text-input"></li>
+                    <li><label for="last-name">Last Name:</label> <input type="text" name="last-name" id="last-name"
+                            class="text-input"></li>
+                    <li><label for="phone">Phone Number:</label> <input type="tel" name="phone" id="phone"
+                            class="text-input"></li>
+                    </li><label for="email">Email Address:</label> <input type="email" name="email" id="email"
+                        class="text-input"></li>
+                    <li><label for="subject">Subject:</label> <input type="text" name="subject" id="subject"
+                            class="text-input"></li>
+                    <li><label for="message">Message:</label> <textarea id="message" name="message"
+                            class="text-area"></textarea></li>
+                </ul>
+            </section>
+            <section class="main-section">
+                    <h3>Area Of Interest</h3>
+                    <p>What service(s) are you interested in?</p>
+                    <ul class="interest-fields">
+                    <li><input type="checkbox" id="design" value="design"> <label for="design">Web Design</label></li>
+                    <li><input type="checkbox" id="development" value="development"> <label for="development">Web
+                            Development</label></li>
+                    <li><input type="checkbox" id="logo" value="logo"><label for="logo">Logo Design</label></li>
+                </ul>
+            </section>
+            <section class="submit-form">
+                <h3> I look forward to working with you!</h3>
+                <button type="submit" class="submit-btn">Submit</button>
+            </section>
+        </form>
+    </main>
+</body>
+
+</html>
